@@ -1,0 +1,257 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+/*estilo del menu*/
+
+menu {
+  background: rgb(0, 0, 0);
+  width: 90%;
+  }
+.menu {
+     float: right;
+     padding-left:8%;
+     padding-right:8%;
+  }
+.menu ul {
+  list-style: none;
+  overflow: hidden; 
+  }
+.menu ul li {
+  float: left;
+  font-family: Arial, Helvetica, sans-serif;;
+  font-size: 20px;
+  }
+.menu ul li a {
+  display: block; 
+  padding: 20px;
+  color: #fff;
+  text-decoration: none;
+  }
+.menu ul li:hover {
+  background: #fd002c;
+  }
+  /*CODIGO DE GRID*/
+.item1 {grid-area: header;
+  background-color: #fd002c;
+  width: auto;
+  height: auto;
+}
+
+.item2 {grid-area: menu;
+  background-color: rgb(0, 0, 0);}
+  
+
+.item3 {grid-area: main; 
+  font-weight: bold;
+  background-color: rgb(255, 255, 255); }
+
+.item4 {grid-area: aside;
+  background-color: rgb(78, 76, 77);
+  }
+
+.item5 {grid-area: footer;
+background-color: hsl(0, 0%, 32%);
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+text-align: center;
+  }
+
+.grid-container{
+display: grid;
+grid-template-areas: 
+'header header header header'
+'menu menu menu menu'
+'main main main main'
+'footer footer footer footer';
+gap: 10px;
+}
+/*contenido del main*/
+h1{
+  text-align: center;
+}
+.item2{
+  font-size: 1em;
+  float: right;
+}
+.contenedor{
+  width:90% ;
+  max: width 800px; ;
+  margin: auto;
+}
+.categorias{
+display: flex; 
+justify-content: center;
+flex-wrap: wrap; /*si tengo mas elementos se ponen debajo si no caben */
+}
+
+.categorias a {
+color: black;
+margin: 15px;
+font-size: 20px;
+}
+/*estilo del porfolio*/
+.titulo-contenido {
+  font-family: "Golos Text", sans-serif;
+  font-size: 1.2em;
+  margin-left: 4em;
+  margin-bottom: 1.5em;
+  text-decoration: underline;
+}
+.flex-container-contenidos {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: 90%;
+  margin-left: 2em;
+  margin-right: 2em;
+  justify-content: center;
+}
+.contenido-destacados {
+  padding: 5px;
+  width: 27.5%;
+  background-color: hsl(0, 0%, 100%);
+  margin: 10px;
+  margin-bottom: 25px;
+  text-align: center;
+  justify-content: center;
+  font-size: 14px;
+}
+.imagen-contenido {
+  width: auto;
+  height: 18em;
+}
+.texto-destacado {
+  font-size: 0.85em;
+  text-align: center;
+  color: hsl(0, 0%, 0%);
+
+  justify-content: center;
+  font-family: "Golos Text", sans-serif;
+}
+button{
+  background-color: rgb(255, 255, 255);
+}
+/*Footer*/
+.footer-content {
+  background-color: hsl(0, 0%, 32%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+/*Iconos redes sociales*/
+.footer-content {
+  background-color: hsl(0, 0%, 0%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.socials {
+  background-color: hsl(0, 0%, 0%) 0;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 0 0.5rem 0;
+}
+.socials li {
+  background-color: hsl(0, 0%, 0%);
+  margin: 0 10px;
+}
+.socials a {
+  background-color: hsl(0, 0%, 0%);
+  text-decoration: none;
+  color: hsl(0, 0%, 100%);
+}
+.socials a i {
+  background-color: hsl(0, 0%, 0%);
+  font-size: 1.1rem;
+}
+.socials a:hover {
+  color: hsl(0, 0%, 51%);
+}
+.footer-bottom {
+  background-color: hsl(0, 0%, 0%);
+  color: hsl(0, 0%, 100%);
+  width: 100%;
+  padding: 20px 0;
+  text-align: center;
+}
+.footer-bottom p {
+  font-size: 14px;
+  white-space: 2px;
+  text-transform: capitalize;
+} 
+/*Footer*/
+.footer-content {
+  background-color: hsl(0, 0%, 32%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+/*Iconos redes sociales*/
+.footer-content {
+  background-color: hsl(0, 0%, 0%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.socials {
+  background-color: hsl(0, 0%, 0%) 0;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 0 0.5rem 0;
+}
+.socials li {
+  background-color: hsl(0, 0%, 0%);
+  margin: 0 10px;
+}
+.socials a {
+  background-color: hsl(0, 0%, 0%);
+  text-decoration: none;
+  color: hsl(0, 0%, 100%);
+}
+.socials a i {
+  background-color: hsl(0, 0%, 0%);
+  font-size: 1.1rem;
+}
+.socials a:hover {
+  color: hsl(0, 0%, 51%);
+}
+.footer-bottom {
+  background-color: hsl(0, 0%, 0%);
+  color: hsl(0, 0%, 100%);
+  width: 100%;
+  padding: 20px 0;
+  text-align: center;
+}
+.footer-bottom p {
+  font-size: 14px;
+  white-space: 2px;
+  text-transform: capitalize;
+}
+.reservas{
+  text-align: center;
+  background-color: rgb(255, 255, 255);
+  padding-left: 10pxrgb(255, 255, 255)
+  padding-right: 10px;
+}
+.reservas img{
+  width: 50px;
+  height: 50px;
+}
